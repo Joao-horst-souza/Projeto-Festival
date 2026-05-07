@@ -1,0 +1,264 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body{
+    background: linear-gradient(
+        180deg,
+        #050b2b 0%,
+        #091540 40%,
+        #0b1d5c 100%
+    );
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    background: rgba(0, 0, 0, 0.4) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.navbar-brand{
+    color: white !important;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.nav-link{
+    color: rgba(255,255,255,0.8) !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover{
+    color: #00bfff !important;
+}
+
+/* =========================
+   HERO
+========================= */
+
+#hero{
+    min-height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.7),
+            rgba(0,0,0,0.7)
+        ),
+        url("./champions-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+#hero h1{
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    text-shadow:
+        0 0 10px rgba(0,191,255,0.8),
+        0 0 20px rgba(0,191,255,0.5);
+}
+
+#hero p{
+    font-size: 1.3rem;
+    color: rgba(255,255,255,0.8);
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+.btn-warning{
+    background: linear-gradient(
+        45deg,
+        #00bfff,
+        #0044ff
+    );
+
+    border: none;
+    color: white;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-warning:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,191,255,0.7);
+}
+
+/* =========================
+   ALERT
+========================= */
+
+.alert{
+    border: none;
+    border-radius: 15px;
+
+    font-weight: bold;
+
+    box-shadow: 0 0 20px rgba(255,0,0,0.4);
+}
+
+/* =========================
+   TITULOS
+========================= */
+
+h2{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+
+    margin-bottom: 40px;
+
+    color: white;
+
+    text-shadow: 0 0 15px rgba(0,191,255,0.6);
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card{
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition: 0.4s;
+
+    backdrop-filter: blur(8px);
+
+    color: white;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 0 20px rgba(0,191,255,0.5),
+        0 0 40px rgba(0,191,255,0.2);
+}
+
+.card img{
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-title{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card-text{
+    color: rgba(255,255,255,0.8);
+}
+
+/* =========================
+   BADGE
+========================= */
+
+.badge{
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.table{
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.table th{
+    background: #001b6b !important;
+}
+
+.table td{
+    vertical-align: middle;
+}
+
+/* =========================
+   FORM
+========================= */
+
+form{
+    background: rgba(255,255,255,0.05);
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    backdrop-filter: blur(10px);
+}
+
+.form-label{
+    color: white;
+    font-weight: bold;
+}
+
+.form-control{
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+
+    color: white;
+}
+
+.form-control::placeholder{
+    color: rgba(255,255,255,0.5);
+}
+
+.form-control:focus{
+    background: rgba(255,255,255,0.1);
+
+    color: white;
+
+    border-color: #00bfff;
+
+    box-shadow: 0 0 15px rgba(0,191,255,0.5);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background: #020817;
+
+    border-top: 1px solid rgba(255,255,255,0.1);
+
+    color: rgba(255,255,255,0.7);
+}
+
